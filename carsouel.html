@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--new css-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+    body {
+    min-height: 100vh;
+    align-items: center;
+    background-color: rgb(175, 175, 175);
+    font-family: 'Open Sans'
+}
+
+#micarsouel {
+    background: linear-gradient(112deg, #ffffff 50%, rgb(185, 185, 185) 50%);
+    max-width: 900px;
+    margin: auto
+}
+    .carousel-caption {
+    position: initial;
+    z-index: 10;
+    padding: 5rem 8rem;
+    color: rgba(78, 77, 77, 0.856);
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2rem
+}
+.carousel-caption img {
+    width: 23rem;
+    border-radius: 2rem;
+    margin-top: 2rem
+}
+#image-caption {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem
+}
+@media(max-width:767px) {
+    #image-caption {
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem
+    }
+}
+@media(max-width:767px) {
+    .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 3rem 2rem;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem
+    }
+}
+#image-caption {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem
+}
+
+@media(max-width:767px) {
+    #image-caption {
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem
+    }
+}
+
+i {
+    background-color: rgb(223, 56, 89);
+    padding: 1.4rem
+}
+
+@media(max-width:767px) {
+    i {
+        padding: 0.8rem
+    }
+}
+
+.carousel-control-prev {
+    justify-content: flex-start
+}
+
+.carousel-control-next {
+    justify-content: flex-end
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: none;
+    opacity: unset
+}
+</style>
+
+</head>
+<body>
+    <div class="continer">
+        <div id="micarsouel" class="carousel slide" data-slid="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#micarsouel" data-slid-to="0" class="active"></li>
+                <li data-target="#micarsouel" data-slid-to="1"></li>
+                <li data-target="#micarsouel" data-slid-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    
+                    <div class="carousel-caption">
+                        <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.This was the very best explanation of frameworks for brginners that I've ever seen.</p><img src="nature.jpg" alt="nature"  > 
+                        <div id="image-caption">Nick Doe</div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-caption">
+                        <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.This was the very best explanation of frameworks for brginners that I've ever seen.</p><img src="nature.jpg" alt="nature"  > 
+                        <div id="image-caption">Nick Doe</div>
+                    </div>               
+                 </div>
+                <div class="item">
+                    <div class="carousel-caption">
+                        <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.This was the very best explanation of frameworks for brginners that I've ever seen.</p><img class="img-circle" src="nature.jpg" alt="nature"  > 
+                        <div id="image-caption">Nick Doe</div>
+
+                    </div>             
+                  </div>
+            </div>
+            <a class="left carousel-control" href="#micarsouel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#micarsouel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+    </div>
+</body>
+</html>

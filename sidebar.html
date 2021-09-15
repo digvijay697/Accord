@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 80px;
+            height: 1000px;
+            background-color: white;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            /* background-color: cadetblue; */
+        }
+
+        /* Change the link color on hover */
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        .navbar {
+            float: left;
+        }
+
+        .home {
+            float: left;
+        }
+
+        .w3-button {
+            font-size: 35px;
+            padding: 1px 16px;
+            width: 100%;
+            display: block;
+            text-align: left;
+            border: none;
+            white-space: normal;
+            float: none;
+            outline: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="w3-teal">
+        <div class="w3-container">
+            <h1>My Page</h1>
+        </div>
+    </div>
+    <div class="navbar">
+        <ul>
+            <button style="font-size: 40px;" onmouseover="w3_open()">☰</button>
+            <li>
+                <a href="#" class="active">
+                    <span class="icon"><i class="fa fa-home" style="font-size: 40px;"></i></span>
+                    <span class="title">Link 3</span>
+                </a>
+            </li>
+            <li><a href="#"><i class="fa fa-envelope" style="font-size: 40px;"></i></a></li>
+            <li><a href="#"><i class="fa fa-globe" style="font-size: 40px;"></i></a></li>
+            <li><a href="#"><i class="fa fa-trash" style="font-size: 40px;"></i></a></li>
+            <li><a href="#"><i class="fa fa-trash" style="font-size: 40px;"></i></a></li>
+
+
+        </ul>
+    </div>
+
+    <!-- Sidebar -->
+
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onmousemove="w3_close()" style="font-size: 35px;" class="w3-bar-item">&times;</button>
+        <a href="#" class="w3-button">Link 1</a>
+        <a href="#" class="w3-button">Link 2</a>
+        <a href="#" class="w3-button">Link 3</a>
+        <a href="#" class="w3-button">Link 4</a>
+        <a href="#" class="w3-button">Link 5</a>
+
+    </div>
+
+
+
+    <!-- Page Content -->
+
+
+    <img src="logo-retina-2-150x150.png" alt="Car" style="width:25%">
+
+    <div class="">
+        <p>This sidebar is hidden by default, (style="display:none")</p>
+        <p>You must click on the "hamburger" icon (top left) to open it.</p>
+        <p>The sidebar will hide a part of the page content.</p>
+    </div>
+
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "inline";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

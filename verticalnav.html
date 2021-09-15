@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  /* background-color: cadetblue; */
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+.subnavbtn{
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 8px 16px;
+  width: 100px;
+}
+.subnavbtn:hover{
+  background-color: #555;
+  color: white;
+  
+}
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+.subnavbtn:hover .subnav-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<h2>Vertical Navigation Bar</h2>
+
+<ul>
+  <li>
+    <!-- <ul class="subnav"> -->
+    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+    <ul class="subnav-content">
+      <li>
+      <a href="#bring">Bring</a>
+      <a href="#deliver">Deliver</a>
+      <a href="#package">Package</a>
+      <a href="#express">Express</a>
+      </li>
+    </ul>
+    <!-- </ul> -->
+  </li>
+  <li>
+    <a href="#">service</a>
+  </li>
+  <li>
+    <a href="#">about us</a>
+  </li>
+  <li>
+    <a href="#">Blanck</a>
+  </li>
+</ul>
+
+</body>
+</html>
